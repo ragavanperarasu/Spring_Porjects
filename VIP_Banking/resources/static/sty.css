@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+          background-image: url("bk.jpg");
+      background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background: #ffffff;
+    
+
+    
+    color: #333;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    
+          background: rgba(255, 255, 255, 0.2);
+    
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	
+    margin-left:50%;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    color: white;
+}
+
+/* Animation */
+.animation-container {
+    margin: 0 auto 20px;
+}
+
+.checkmark-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: #4CAF50;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: popIn 0.5s ease-out;
+}
+
+.checkmark-circle .circle {
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.checkmark-circle .checkmark {
+    width: 40px;
+    height: 20px;
+    border: 4px solid #4CAF50;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #388E3C;
+}
+
+.btn-secondary {
+    background: #757575;
+}
+
+.btn-secondary:hover {
+    background: #616161;
+}
